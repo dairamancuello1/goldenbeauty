@@ -1,0 +1,490 @@
+/*
+:root {
+    --nombre-variable: #000000;
+}
+
+a.link {
+    color: var(--nombre-variable)
+}
+
+*/
+
+/*----------------------------------------------GENERAL-------------------------------------------------*/
+:root {
+    --headerColor: rgb(253, 230, 101);
+}
+
+
+
+/*--------------------HEADER--------------------*/
+header {
+    background-color: var(--headerColor);
+    text-align: center;
+    height: 54px;
+    position: fixed;
+    font-size: 12px;
+    right: 0;
+    left: 0;
+    top: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 10000;
+}
+
+
+.menuHeader a {
+    color: #424242;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.menuHeader a:hover {
+    color: rgb(34, 197, 143);
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.menuHeader a:active {
+    color: rgb(34, 197, 143);
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.menuHeader ul {
+    padding-left: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.menuHeader ul li a img {
+    height: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+.menuHeader ul li {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    line-height: 54px;
+}
+
+.menuHeader li:hover .submenuHeader {
+    display: block;
+    position: absolute;
+}
+
+.menuHeader .submenuHeader {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 54px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    background-color:  rgb(253, 230, 101);
+    border: 3px solid white;
+    font-size: 10px;
+    text-align: left;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+.menuHeader ul li .submenuHeader li {
+    line-height: 25px;
+    display: block;
+    padding-left: 5px;
+}
+
+/*---------------------MAIN---------------------*/
+
+main {
+    margin-top: 54px;
+}
+
+
+/*--------------------FOOTER--------------------*/
+footer {
+    background-color: var(--headerColor);
+    color: #424242;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+    padding: 20px 100px 0 100px;
+    justify-content: center;
+    margin-top: 10px;    
+}
+
+footer div {
+    display: inline;
+}
+
+footer .footer-content {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+footer span {
+    font-weight: 600;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    display: block;
+    font-size: 12px;
+}
+
+footer ul li a {
+    color: whi#424242;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+footer ul li a:visited  {
+    color: #424242;
+}
+
+footer ul li a:hover {
+    color: rgb(34, 197, 143);
+}
+
+footer ul li a:active {
+    color: rgb(34, 197, 143);
+}
+ 
+footer p {
+    color: #424242;
+    font-size: 10px;
+}
+
+
+/*-----------------OTHER-------------------*/
+
+body {
+    background-color:white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 54px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------INDEX-----------------------------------------------*/
+ .indexMain {
+    height: 90vh;
+}
+
+.indexBackground {
+    background-image: url("media/sunglasses-1246251_1920.jpg");
+    background-size: cover;
+    background-color: wheat;  
+}
+
+div .col {
+    position: unset;
+}
+
+.indexSubtitle h6 {
+    color:rgb(235, 232, 221);
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    font-weight: normal;
+    text-shadow: 1px 1px 3px #2d2d2d;
+}
+
+
+.indexTitle h1 {
+    color: rgb(228, 194, 4);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px #2d2d2d;
+    font-size: 125px;
+    line-height: 125px;
+    text-align: right;  
+}
+
+
+
+/*------------------------------------------------PRODUCTS-----------------------------------------------*/
+
+/*-------------BANNER-------------*/
+#bannerProducts {
+    background-image: url(media/banner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#bannerProducts span {
+    margin-top: 75px;
+    color: white;
+    font-weight: 700;
+    line-height: 60px;
+    font-size: 38px;
+    text-align: center;
+    display: block;
+    text-shadow: 1px 1px 1px #424242;
+    position: sticky;
+    top: 100px;
+    bottom: 100vh;
+}
+
+#bannerProducts p {
+    color: white;
+    font-weight: 600;
+    line-height: 35px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    display: block;
+    margin-top: 75px;
+    text-shadow: 1px 1px 1px #424242;
+    position: sticky;
+    top: 420px;
+    bottom: 100vh;
+}
+
+/*------------titleProducts-----------*/
+#titleProducts strong {
+    color: #797979;
+    font-weight: 600;
+    font-size: 45px;
+    display: block;
+    margin-bottom: 5%;
+}
+
+#titleProducts span {
+    color: rgb(209, 209, 209);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    display: block;
+}
+
+
+/*-----------GRID-----------*/
+.gridProducts div#titleProducts {
+    grid-area: titleProducts;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.gridProducts div#productList {
+    grid-area: productList;
+}
+
+.gridProducts div#bannerProducts {
+    grid-area: bannerProducts;
+}
+
+.gridProducts {
+    display: grid;
+    grid-template-areas:
+    "titleProducts bannerProducts"
+    "productList bannerProducts";
+    grid-template-columns: 85% 15%;
+    grid-template-rows: auto;
+}
+
+
+/*-------PRODUCTSLIST-------*/
+#productList ul {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    list-style: none;
+}
+
+#productList ul li {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+#productList ul li a {
+    color: rgb(209, 209, 209);
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#productList ul li a:hover {
+    color: rgb(34, 197, 143);
+    text-decoration: none;
+    font-size: medium;
+}
+
+#productList ul li a:active {
+    color: rgb(34, 197, 143);
+    text-decoration: none;
+    font-size: medium;
+}
+
+#productList ul li a img {
+    width: 500px;
+    flex-grow: 1;
+    flex-basis: 100%;
+    transition: all 0.75s;
+    margin: 10px;
+}
+
+#productList ul li a img:hover {
+    width: 510px;
+}
+
+#productList span {
+    flex-grow: 1;
+    flex-basis: 50%;    
+}
+
+/*----------CAROUSEL--------*/
+section#productsCleanser {
+    padding-top: 60px;
+}
+
+div .carousel-caption {
+    text-align: center;
+    color: #424242;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+div .carousel-inner {
+    width: 626px;
+}
+
+a.carousel-control-next {
+    padding-left: 50px;
+}
+
+div#carouselCleanser.carousel.slide.container  {
+    width: 626px;
+}
+
+div#carouselCleanser .container {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    width: 626px;
+}
+
+section#productsCleanser h3 {
+    color: #008560;
+    font-size: 46px;
+}
+
+section#productsCleanser table {
+    color: #424242;
+    font-size: 14px;
+    text-align: center;  
+}
+
+section#productsCleanser table th {
+    font-weight: bold;
+    border-bottom: 1px solid #424242;
+    padding: 7px;
+}
+
+section#productsCleanser table td {
+    border-bottom: 1px solid #424242;
+    padding: 7px;
+}
+
+/*------------------------------------------------ABOUT-----------------------------------------------*/
+.aboutStyle {
+    text-align: center;
+    color: #424242;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.aboutStyle h2 {
+    color: #008560;
+    font-size: 64px;
+    text-align: left;
+}
+
+
+
+
+/*------------------------------------------------EMAILFORM-----------------------------------------------*/
+.emailStyle {
+    padding-top: 20vh;
+}
+
+.emailStyle h2 { 
+    text-align: center;
+    font-size: 64px;
+}
+
+.emailStyle p {
+    text-align: center;
+    color: #424242;
+    font-size: 21px;
+}
+
+.form {
+    color: #424242;
+    line-height: 2;
+    margin-top: 40px;
+}
+
+.emailStyle form input.button {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.emailStyle select {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border: 1px solid #ced4da;
+    color: #495057;
+    
+}
+
+/*------------------------------------------------SHIPPING-----------------------------------------------*/
+.shippingStyle p {
+    text-align: center;
+    color: #424242;
+    font-size: 16px;
+}
+
+.shippingTable {
+    color: #424242;
+    font-size: 14px;
+    padding: 2px;
+    text-align: center;    
+}
+
+.shippingTable tr th {
+    font-weight: bold;
+    border-bottom: 1px solid #424242;
+    padding: 10px;
+}
+
+.shippingTable tr td {
+    border-bottom: 1px solid #424242;
+    padding: 10px;
+}

@@ -1,0 +1,562 @@
+/*
+:root {
+    --nombre-variable: #000000;
+}
+
+a.link {
+    color: var(--nombre-variable)
+}
+
+*/
+
+/*----------------------------------------------GENERAL-------------------------------------------------*/
+:root {
+    --headerColor: rgb(253, 230, 101);
+}
+
+body {
+    background-color:whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    color: #424242;
+    margin-top: 54px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.widthTitle {
+    width: 100vh;
+    margin: auto;
+    position: relative;
+}
+
+.widthTitleP {
+    width: 60%;
+    margin: auto;
+    position: relative;
+}
+
+.heightTitle {
+    height: 100vh;
+    margin: auto;
+    position: relative;
+}
+
+section {
+    overflow: hidden;   
+    height: 100vh;
+}
+
+main {
+    margin-top: 54px;
+}
+
+
+
+
+
+/*--------------------HEADER--------------------*/
+header {
+    background-color: var(--headerColor);
+    text-align: center;
+    height: 54px;
+    position: fixed;
+    font-size: 12px;
+    right: 0;
+    left: 0;
+    top: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 10000;
+
+    .menuHeader {
+           
+        ul {
+            padding-left: 0;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            li {
+                display: inline-block;
+                position: relative;
+                padding-left: 25px;
+                line-height: 54px;
+
+                a {
+                    color: #424242;
+                    letter-spacing: 2px;
+                    text-decoration: none;
+                    font-weight: 500;
+                    margin: auto;
+                    text-transform: uppercase;
+                    transition: all 0.3s;
+                    border-bottom: 1px solid transparent;
+                        &:hover {
+                            color: rgb(34, 197, 143);
+                            border-bottom: 1px solid rgb(34, 197, 143);
+                            margin: auto;
+                        }
+                        
+                        &:active {
+                            color: rgb(34, 197, 143);
+                            text-decoration: none;
+                            margin-right: 10px;
+                            margin-left: 10px;
+                        }
+
+                        img {
+                        height: 36px;
+                        margin: 0;
+                        padding: 0;  
+                        } 
+                }
+                
+                &:hover .submenuHeader {
+                    display: block;
+                    position: absolute;
+                }
+            
+                .submenuHeader {
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    top: 54px;
+                    margin-top: 0;
+                    margin-right: 0;
+                    margin-bottom: 0;
+                    margin-left: 20px;
+                    background-color:  rgb(253, 230, 101);
+                    border: 3px solid white;
+                    font-size: 10px;
+                    text-align: left;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+                    
+                    li {
+                        line-height: 25px;
+                        display: block;
+                        padding-left: 5px;
+                        a {
+                            &:hover {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }    
+            }
+        }      
+    }
+}
+
+
+/*---------------------MAIN---------------------*/
+
+
+
+/*--------------------FOOTER--------------------*/
+footer {
+    background-color: var(--headerColor);
+    color: #424242;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+    padding: 20px 100px 0 100px;
+    justify-content: center;
+    margin-top: 10px;    
+    
+    div {
+        display: inline;
+    }
+
+    span {
+        font-weight: 600;
+    }
+
+    p {
+        color: #424242;
+        font-size: 10px;
+    }
+
+    ul {
+        padding: 0;
+        
+        li {
+            display: block;
+            font-size: 12px;
+
+            a {
+                color: whi#424242;
+                letter-spacing: 1px;
+                text-decoration: none;
+                margin-right: 10px;
+                margin-left: 10px;
+
+                &:visited  {
+                    color: #424242;
+                }
+
+                &:hover {
+                    color: rgb(34, 197, 143);
+                }
+
+                &:active {
+                    color: rgb(34, 197, 143);
+                }
+            }
+        }
+    }
+
+    .footer-content {
+        flex-grow: 1;
+        flex-basis: 50%;
+    }
+}
+
+/*-----------------OTHER-------------------*/
+
+
+
+/*--------------------------------------------------INDEX-----------------------------------------------*/
+.indexMain {
+    height: 90vh;
+}
+
+.indexBackground {
+    background-image: url("media/sunglasses-1246251_1920.jpg");
+    background-size: cover;
+    background-color: wheat;  
+}
+
+div .col {
+    position: unset;
+}
+
+.indexSubtitle h6 {
+    color:rgb(235, 232, 221);
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    font-weight: normal;
+    text-shadow: 1px 1px 3px #2d2d2d;
+}
+
+
+.indexTitle h1 {
+    color: rgb(228, 194, 4);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px #2d2d2d;
+    font-size: 125px;
+    line-height: 125px;
+    text-align: right;
+}
+
+
+
+/*------------------------------------------------PRODUCTS-----------------------------------------------*/
+
+
+/*-----------GRID-1-----------*/
+
+    
+.gridTitleProducts {
+        display: grid;
+        grid-template-areas:
+        "titleProducts imageTitle";
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+        div#titleProducts {
+            grid-area: titleProducts;
+            margin: 0 0 0 0;
+            display: inline-block;
+            h1 {
+                color: rgb(0, 124, 103);
+                font-weight: 400;
+                font-size: 81px;
+                display: block;
+                margin: 0 0 5% 0 ;
+                line-height: 75px;
+            }
+            span {
+                color: #424242;
+                font-size: 26px;
+                font-weight: lighter;
+                margin-bottom: 10px;
+                .normal {
+                    font-weight: normal;
+                }
+            }
+            p {
+                color: #424242;
+                font-size: 20px;
+                margin-top: 15px;
+                font-weight: lighter;
+            }   
+        }    
+        div#imageTitle {
+            grid-area: imageTitle;
+            background-image: url(media/pexels-olenka-sergienko-3541388.jpg);
+            background-size: cover;
+            background-position: center;
+            box-shadow: inset 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+        }
+}
+
+/*------------BANNER--------------*/
+div.banner {
+    margin: 20px;
+    text-align: center;
+    color: #424242;
+    span {
+        font-weight: 600;
+        font-size: 21px;
+    }
+    ul {
+    list-style: none;
+    margin-top: 20px;
+    justify-content: space-around;
+    display: flex;
+    padding: 0;
+        li {
+            display: inline-block;
+            position: relative;
+            padding: 0;
+            img {
+                height: 50px;
+            }
+            p.lighter {
+                font-weight: lighter;
+            }
+        }
+    }
+}
+
+/*-----------GRID-2-----------*/
+section.gridProducts {
+    display: grid;
+    grid-template-areas:
+    "titleP titleP titleP titleP"
+    "cardOne cardTwo cardThree cardFour";
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 35% 65%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(82,241,175,1) 0%, rgba(195,255,229,1) 100%);
+    grid-area: titleP;
+    div#titleP {
+        grid-area: titleP;
+        text-align: center;
+        color: #212121;
+        margin-top: 5%;
+        span {
+            font-size: 35px;
+            display: block;
+            margin-bottom: 2%;
+        }
+        p {
+            font-size: 19px;
+            margin: 0;
+            font-weight: lighter;
+        }
+    }
+    div#cardOne {
+        grid-area: cardOne;
+    }
+    div#cardTwo {
+        grid-area: cardTwo;
+    }
+    div#cardThree {
+        grid-area: cardThree;
+    }
+    div#cardFour {
+        grid-area: cardFour;
+    }
+}
+
+div.card {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    // margin: 5px;
+    padding: 5px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    // &:hover {
+
+    // }
+    div.card-body {
+        a {
+            h4 {
+                font-size: 18px;
+            }
+            // .stretched-link:hover {
+            //         width: 90%;
+            // }   
+        }
+        
+    }
+}
+
+div.containerCard {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    transition: all 0.75s;
+    &:hover {
+        width: 85%;
+    }
+}
+
+/*----------CAROUSEL--------*/
+section#productsCleanser {
+    padding-top: 60px;
+    text-align: left;
+}
+
+div.carousel {
+    height: 500px;
+    width: 626px;
+    text-align: left;
+    display: inline-block;
+}
+
+div .carousel-caption {
+    text-align: center;
+    color: #424242;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+div.carousel-inner {
+    width: 626px;
+    div.carousel-item img {
+        -webkit-filter: contrast(75%);
+        filter: contrast(75%);
+    }
+
+}
+
+a.carousel-control-next {
+    padding-left: 50px;
+}
+
+div#carouselCleanser.carousel.slide.container  {
+    width: 626px;
+}
+
+div#carouselCleanser .container {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    width: 626px;
+}
+
+
+
+section#productsCleanser h3 {
+    color: #008560;
+    font-size: 46px;
+}
+
+section#productsCleanser table {
+    color: #424242;
+    font-size: 14px;
+    text-align: center;  
+}
+
+section#productsCleanser table th {
+    font-weight: bold;
+    border-bottom: 1px solid #424242;
+    padding: 7px;
+}
+
+section#productsCleanser table td {
+    border-bottom: 1px solid #424242;
+    padding: 7px;
+}
+
+/*------------------------------------------------ABOUT-----------------------------------------------*/
+.aboutStyle {
+    text-align: center;
+    color: #424242;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.aboutStyle h1 {
+    color: #008560;
+    font-size: 64px;
+    text-align: center;
+}
+
+
+
+
+/*------------------------------------------------EMAILFORM-----------------------------------------------*/
+.emailStyle {
+    padding-top: 20vh;
+}
+
+.emailStyle h1 { 
+    text-align: center;
+    font-size: 64px;
+}
+
+.emailStyle p {
+    text-align: center;
+    color: #424242;
+    font-size: 21px;
+}
+
+.form {
+    color: #424242;
+    line-height: 2;
+    margin-top: 40px;
+}
+
+.emailStyle form input.button {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.emailStyle select {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border: 1px solid #ced4da;
+    color: #495057;
+    
+}
+
+/*------------------------------------------------SHIPPING-----------------------------------------------*/
+.envios__estilos_titulo {
+    color: #008560;
+    font-size: 64px;
+    text-align: center;
+}
+
+.envios__estilos_p {
+    text-align: center;
+    color: #424242;
+    font-size: 16px;
+}
+
+.envios__tabla {
+    color: #424242;
+    font-size: 14px;
+    padding: 2px;
+    text-align: center;    
+}
+
+.envios__tabla__row--head {
+    font-weight: bold;
+    border-bottom: 1px solid #424242;
+    padding: 10px;
+}
+
+.envios__tabla__row--d {
+    border-bottom: 1px solid #424242;
+    padding: 10px;
+}
