@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="height=device-height, initial-scale=1.0"/>
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0"/>
     <title>Home | Golden Beauty</title>
     <meta name="keywords" content="GOLDEN, BEAUTY, BELLEZA, SKINCARE, PIEL, CUIDADOS"/>
     <meta name="description" content="En Golden Beauty creemos que tu piel merece lo mejor, por eso combinamos los ingredientes de la más alta calidad, con variantes para todas las necesidades, porque para cuidarte no hay edad ni género. No lo pienses más ¡Empezá tu skincare hoy!"/>
@@ -39,21 +39,130 @@
     
     <main>
 
-        <section class="indexMain indexBackground d-flex align-items-center">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col">
-                        <div class="indexTitle">
-                            <h1>Golden Beauty.</h1>
-                        </div>
+        <section id="firstSection" >
+            <div class="containerWidth gridIndexTitle">
+                <div id="subtexto">
+                    <div class="block">
+                        <p class="normal">Empezá a cuidar tu piel hoy.</p>
+                        <p class="light">Todo el cuidado que necesitas, en un sólo lugar</p>
                     </div>
-                    <div class="col">
-                        <div class="indexSubtitle">
-                            <h6>Todo el cuidado de tu piel, en un sólo lugar.</h6>
+                </div>
+                <div id="indexTitle">
+                    <div class="gridTitle block">
+                        <div id="head1">
+                            <h1>Golden Beauty</h1>
+                        </div>
+                        <div id="bajada">
+                            <P class="light">¡Deslizá para conocernos y ver todo lo que tenemos para ofrecerte!</P>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <div id="bannerIndex" class="banner container-fluid">
+            <span class="normal">¿Por qué elegirnos?</span>
+            <ul>
+                <li class="container">
+                    <p>100% Vegan</p>
+                    <img src="css/media/vegan.png"/>
+                    <p class="lighter">No contienen productos de origen animal</p>
+                </li>
+                <li class="container">
+                    <p>Cruelty Free</p>
+                    <img src="css/media/cruelty-free.png"/>
+                    <p class="lighter">No se testean en animales</p>
+                </li>
+                <li class="container">
+                    <p>Eco Friendly</p>
+                    <img src="css/media/eco-friendly.png"/>
+                    <p class="lighter">Los envases son biodegradables</p>
+                </li>
+            </ul>
+        </div>
+
+        <section id="carouselIndex">
+<!-- 
+            <div id="carouselIndex" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselIndex" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselIndex" data-slide-to="1"></li>
+                  <li data-target="#carouselIndex" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="css/media/pexels-anna-shvets-3851790.jpg" alt="Productos">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Conocé nuestros productos</h5>
+                      </div>
+                </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="css/media/pexels-cottonbro-4056467.jpg" alt="Limpieza">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Empezá por la limpieza.</h5>
+                      </div>
+                </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="css/media/pexels-brett-sayles-1708601.jpg" alt="Navidad">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>¡Encontrá acá tu regalo de Navidad!</h5>
+                      </div>
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselIndex" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselIndex" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div> -->
+
+              <!-- <div id="carouselIndex" class="carousel slide container" data-ride="carousel" data-interval="false">
+                
+                <ul class="carousel-indicators">
+                    <li data-target="#carouselIndex" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselIndex" data-slide-to="1"></li>
+                </ul>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <img src="css/media/pexels-anna-shvets-3851790.jpg" alt="Productos">
+                            <div class="carousel-caption">
+                                <h4>Conocé nuestros productos</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="container">
+                            <img src="css/media/pexels-cottonbro-4056467.jpg" alt="Limpieza">
+                            <div class="carousel-caption">
+                                <h4>Empezá por la limpieza.</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="container">
+                            <img src="css/media/pexels-brett-sayles-1708601.jpg" alt="Navidad">
+                            <div class="carousel-caption">
+                                <h4>¡Encontrá acá tu regalo de Navidad!</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <a class="carousel-control-prev" href="#carouselIndex" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                <a class="carousel-control-next" href="#carouselIndex" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a> -->
+
         </section>
 
     </main>
